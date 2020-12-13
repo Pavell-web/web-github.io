@@ -20,6 +20,8 @@ body {
 }
 
 .nav-menu {
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
 }
 
@@ -46,22 +48,59 @@ main {
     background-image: url(../img/2.jpg);
 }
 
-.gallery {
-    min-height: 800px;
-    background-color: rgb(203, 206, 176);
-}
 
 .steps {
     min-height: 250px;
     background-color: rgb(207, 189, 216);
 }
 
+//Секция расчета стоимости
+
 .price {
-     min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 250px;
     background-color: rgb(87, 97, 155);
 }
 
+.btn-count {
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 30px;
+
+}
+
+//футер
+
 footer {
-     min-height: 250px;
+    min-height: 200px;
     background-color: rgb(87, 147, 155);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sketchfab-logo,
+.artstation-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.sketchfab-link,
+.artstation-link {
+    text-decoration: none;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+
+
+
+//////Страница modeling
+
+.about {
+    min-height: 350px;
+    background-color: rgb(128, 185, 192);
 }
