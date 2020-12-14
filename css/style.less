@@ -65,12 +65,38 @@ main {
     background-color: rgb(87, 97, 155);
 }
 
-.btn-count {
-    width: 200px;
+.btn-calc {
+    width: 350px;
     height: 70px;
     border-radius: 20px;
-    font-size: 30px;
+    font-size: 26px;
 
+}
+
+.calc-window {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    background-color: rgb(212, 185, 185);
+    border-radius: 15px;
+}
+
+.calc-window-hidden {
+    display: none;
+}
+
+.area-field,
+.filling-field,
+.render-numbers-field {
+   width: 400px;
+}
+
+.btn-count {
+    width: 250px;
 }
 
 //футер
