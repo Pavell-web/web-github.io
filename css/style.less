@@ -57,12 +57,13 @@ main {
 //Секция расчета стоимости
 
 .price {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 250px;
-    background-color: rgb(87, 97, 155);
+    min-height: 300px;
+    background-color: rgba(87, 97, 155, 0.383);
 }
 
 .btn-calc {
@@ -74,19 +75,21 @@ main {
 }
 
 .calc-window {
-    position: relative;
-    z-index: 10;
+    position: fixed;
+    z-index: 1;
+    top: 30vh;
+    left: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 300px;
-    background-color: rgb(212, 185, 185);
+    height: 300px;
+    background-color: rgba(103, 176, 209, 0.63);
     border-radius: 15px;
 }
 
 .calc-window-hidden {
-    display: none;
+    // display: none;
 }
 
 .area-field,

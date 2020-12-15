@@ -91,23 +91,28 @@
             <section class="price">
                  <h3>рассчитать предварительную стоимость визуализации</h3>
                  <div class="calc-window calc-window-hidden container-sm col-md-6 col-sm-12 text-center">
+
                      <label for="area">Укажите площадь помещения</label>
                       <div class="area-field">  
                         <input type="text" maxlength="2" id="area">
                       </div>
+
                      <label for="filling">Степень наполнения помещения</label>
                       <div class="filling-field">
                         <label for="filling">низкая</label>
                         <input type="range" min="1" max="3" name="filling" id="filling">
                         <label for="filling">высокая</label>
                       </div>
+
                      <label for="renders-number">Количество ракурсов</label>
                      <div class="render-numbers-field">
                          <label for="render-numbers">1</label>
                         <input type="range" name="render-numbers" id="render-numbers" min="1" max="10">
                         <label for="render-numbers">10</label>
                     </div>
+                    
                     <button class="btn btn-warning btn-count">рассчитать</button>
+                    <p class="result">Стоимость визуализации:</p>
                  </div>
                  <button class="btn btn-success btn-calc">калькулятор стоимости</button>
              </section>
@@ -137,3 +142,7 @@
     crossorigin="anonymous"></script> -->
 </body>
 </html>
+
+
+
+<!-- container-sm col-md-6 col-sm-12 text-center" -->
