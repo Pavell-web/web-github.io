@@ -110,11 +110,14 @@
                     </div>
 
                     <label for="renders-number">Количество ракурсов</label>
-                    <div class="render-numbers-field">
-                        <label for="render-numbers">1</label>
-                    <input type="range" name="render-numbers" id="render-numbers" min="1" max="10">
-                    <label for="render-numbers">10</label>
-                </div>
+                    <form id="range" class="render-numbers-field" oninput="outputField.value=parseInt(renderNumbers.value)">
+                        
+                    <input type="range" name="render-numbers" id="renderNumbers" min="1" max="8">
+                    
+                    <output name="outputField" form="range" class="output-field">5</output> 
+                    </form>
+
+                
                 
                 <button class="btn btn-warning btn-count">рассчитать</button>
                 <p class="result">Стоимость визуализации:</p>

@@ -10,12 +10,13 @@ calcBtn.onclick = function() {
 
 closeBtn.onclick = function() {
     calcWindow.classList.add('calc-window-hidden');
+    showPrice(0);
 }
 
 
 let areaInput = document.getElementById('area');
 let fillingInput = document.getElementById('filling');
-let rendersInput = document.getElementById('render-numbers');
+let rendersInput = document.getElementById('renderNumbers');
 
 let areaValue;
 let fillingValue;
@@ -32,7 +33,7 @@ fillingInput.oninput = function () {
 }
 
 rendersInput.oninput = function () {
-    rendersValue = rendersInput.value;
+    rendersValue = Number(rendersInput.value);
     console.log(rendersValue)
 }
 
@@ -52,21 +53,23 @@ let getPrice = function(area, filling, renders) {
         price *= 1.2;
     }
 
+    console.log('цена до свич' + price);
+
     switch(renders) {
         case 4: price += 300; break;
         case 5: price += 300 * 2; break;
         case 6: price += 300 * 3; break;
         case 7: price += 300 * 4; break;
         case 8: price += 300 * 5; break;
-        case 9: price += 300 * 6; break;
-        case 10: price += 300 * 7; break;
         default: break;
     }
+    console.log('цена после свич' + price);
     console.log(areaValue);
     console.log(fillingValue);
     console.log(rendersValue);
+    console.log(typeof(rendersValue));
     
-      return price;  
+      return parseInt(price);  
 }
 
 
@@ -77,6 +80,6 @@ let showPrice = function(price) {
 
 
 countBtn.onclick = function() {
-    showPrice(getPrice(areaValue, fillingValue, rendersInput));
+    showPrice(getPrice(areaValue, fillingValue, rendersValue));
 }
 
