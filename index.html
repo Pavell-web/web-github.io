@@ -9,122 +9,135 @@
     <link rel="stylesheet/less" href="css/style.less">
 </head>
 <body>
-   
-        <header class="header">
-            <div class="header-wrapper">
-                <div class="main-title">
-                    <img src="" alt="логотип">
-                    <h1 class=>Услуги 3D моделирования</h1> 
-                    <a href="mailto: risen82@list.ru">my-email@gmail.com</a>
-                </div>
-                <nav  class="nav-menu">
-                    <ul class="nav-menu-list">
-                        <li><a href="#">визуализация интерьера</a></li>
-                        <li><a href="#">3D тур</a></li>
-                        <li><a href="modeling.html">моделирование</a></li> 
-                    </ul>
-                </nav> 
+
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="main-title">
+                <img src="logo/tempLogo.jpg" alt="логотип" class="mainLogo">
+                <h1 class=>Услуги 3D моделирования</h1> 
+                <a href="mailto: risen82@list.ru" class="mail-link">my-email@gmail.com</a>
             </div>
-        </header>
+            <nav  class="nav-menu">
+                <ul class="nav-menu-list">
+                    <li><a href="#">визуализация интерьера</a></li>
+                    <li><a href="#">3D тур</a></li>
+                    <li><a href="modeling.html">моделирование</a></li> 
+                </ul>
+            </nav> 
+        </div>
+    </header>
 
-        <main>
+    <main>
+        <section class="intro">
+            <div class="interior-title">
+                <h2>Визуализация интерьера</h2>
+            </div>
+
+                <P>Для заказчиков дизайн проектов нужна визуализация. Большинство людей не могут абстрактно представить интерьер после
+                ремонта. Что бы избежать недопонимания между дизайнером, и заказчиком и снять возражения лучше заказать
+                визуализированный 3D проект. Так будет легче понять, как будет выглядеть дизайн в объеме, как будут сочетаться
+                материалы, текстуры и цвета. Проект в 3D будет очень полезен ремонтникам и строителям.
+                Объемное трехмерное изображение с полной прорисовкой всех элементов поможет воплотить в жизнь любой дизайн проект.
+                </P>
+        </section>
+
             <section class="gallery">
-                <div class="interior-title">
-                    <h2>Визуализация интерьера</h2>
+                    <h2>Галерея работ</h2>
+            
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/6.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/7.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/8.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/9.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
 
-                    <P>Для заказчиков дизайн проектов нужна визуализация. Большинство людей не могут абстрактно представить интерьер после
-                    ремонта. Что бы избежать недопонимания между дизайнером, и заказчиком и снять возражения лучше заказать
-                    визуализированный 3D проект. Так будет легче понять, как будет выглядеть дизайн в объеме, как будут сочетаться
-                    материалы, текстуры и цвета. Проект в 3D будет очень полезен ремонтникам и строителям.
-                    Объемное трехмерное изображение с полной прорисовкой всех элементов поможет воплотить в жизнь любой дизайн проект.
-                    </P>
-                <h3>Галерея работ</h3>
+        </section>
+
+        <section class="steps">
+                <h2>Этапы выполнения работы</h2>
+                    <p><span>Первое превью</span>
+                        После получения ТЗ начинается первоый этап работы — построение геометрии, настройка освещения и подбор ракурсов. В
+                        результате мы получаем первый эскиз без материалов и текстур. Далее вами утверждаются правильность геометрии и
+                        ракурсы,
+                        вносятся первые корректировки. После согласования первых превью, вы оплачивает аванс за работу в размере 50% от
+                        оговоренной стоимости.</p>
+                    <p><span>Второе превью</span>
+                        Настройке материалов, текстур и наполнение сцены основными элементами декора. Далее вами утверждаются
+                        материалы, текстуры и декор, после чего вносятся все необходимые правки.</p>
+                    <p><span>Третье превью</span>
+                        В пред-финальном этапе мы дорабатываем изображения и вносим окончательные изменения. После чего переходим к
+                        финальному рендеру сцены.</p>
+                    <p><span>Финальный рендер</span>
+                        По готовности финальных изображений, вы оплачиваете остаточную сумму и получаете финальные изображения.</p>
+
+        </section>
+
+        <section class="price">
+                <h2>рассчитать предварительную стоимость визуализации</h2>
+                <div class="calc-window calc-window-hidden container-sm col-xs-8 col-md-6 col-xl-4 text-center">
+                <button class="btn-close close-calc"></button>
+                    <label for="area">Укажите площадь помещения</label>
+                    <div class="area-field">  
+                    <input type="text" maxlength="2" id="area">
+                    </div>
+
+                    <label for="filling">Степень наполнения помещения</label>
+                    <div class="filling-field">
+                    <label for="filling">низкая</label>
+                    <input type="range" min="1" max="3" name="filling" id="filling">
+                    <label for="filling">высокая</label>
+                    </div>
+
+                    <label for="renders-number">Количество ракурсов</label>
+                    <div class="render-numbers-field">
+                        <label for="render-numbers">1</label>
+                    <input type="range" name="render-numbers" id="render-numbers" min="1" max="10">
+                    <label for="render-numbers">10</label>
+                </div>
                 
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/5.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/6.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/7.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
+                <button class="btn btn-warning btn-count">рассчитать</button>
+                <p class="result">Стоимость визуализации:</p>
+                </div>
+                <button class="btn btn-success btn-calc">калькулятор стоимости</button>
             </section>
-
-            <section class="steps">
-                    <h3>Этапы выполнения работы</h3>
-                        <p>Первое превью
-                            После получения ТЗ начинается первоый этап работы — построение геометрии, настройка освещения и подбор ракурсов. В
-                            результате мы получаем первый эскиз без материалов и текстур. Далее вами утверждаются правильность геометрии и
-                            ракурсы,
-                            вносятся первые корректировки. После согласования первых превью, вы оплачивает аванс за работу в размере 50% от
-                            оговоренной стоимости.</p>
-                        <p>Второе превью
-                            Настройке материалов, текстур и наполнение сцены основными элементами декора. Далее вами утверждаются
-                            материалы, текстуры и декор, после чего вносятся все необходимые правки.</p>
-                        <p>Третье превью
-                            В пред-финальном этапе мы дорабатываем изображения и вносим окончательные изменения. После чего переходим к
-                            финальному рендеру сцены.</p>
-                        <p>Финальный рендер
-                            По готовности финальных изображений, вы оплачиваете остаточную сумму и получаете финальные изображения.</p>
-
-            </section>
-
-            <section class="price">
-                 <h3>рассчитать предварительную стоимость визуализации</h3>
-                 <div class="calc-window calc-window-hidden container-sm col-md-6 col-sm-12 text-center">
-
-                     <label for="area">Укажите площадь помещения</label>
-                      <div class="area-field">  
-                        <input type="text" maxlength="2" id="area">
-                      </div>
-
-                     <label for="filling">Степень наполнения помещения</label>
-                      <div class="filling-field">
-                        <label for="filling">низкая</label>
-                        <input type="range" min="1" max="3" name="filling" id="filling">
-                        <label for="filling">высокая</label>
-                      </div>
-
-                     <label for="renders-number">Количество ракурсов</label>
-                     <div class="render-numbers-field">
-                         <label for="render-numbers">1</label>
-                        <input type="range" name="render-numbers" id="render-numbers" min="1" max="10">
-                        <label for="render-numbers">10</label>
-                    </div>
-                    
-                    <button class="btn btn-warning btn-count">рассчитать</button>
-                    <p class="result">Стоимость визуализации:</p>
-                 </div>
-                 <button class="btn btn-success btn-calc">калькулятор стоимости</button>
-             </section>
 
            
 
         <footer>
-            это футер
+            <a href="mailto: risen82@list.ru" class="mail-link">my-email@gmail.com</a>
+            <div class="copyright">&copy; Павел Романов, 2020</div>
+
             <div class="links">
-                <a href="https://sketchfab.com/Stellar_cell" target="_blank" class="sketchfab-link"><img src="logo/sketchfab.png" alt="sketchfab" class="sketchfab-logo">Sketchfab</a>
-                <a href="#" target="_blank" class="artstation-link"><img src="logo/artstation.png" alt="artstation" class="artstation-logo">Artstation</a>
+                <div class="link-item">
+                    <a href="https://sketchfab.com/Stellar_cell" target="_blank" class="sketchfab-link"><img src="logo/sketchfab.png" alt="sketchfab" class="sketchfab-logo">Sketchfab</a>
+                </div>
+
+                <div class="link-item">
+                <a href="https://www.artstation.com/pavelromanov" target="_blank" class="artstation-link"><img src="logo/artstation.png" alt="artstation" class="artstation-logo">Artstation</a>
+                </div>
             </div>
+           
         </footer>
     
     

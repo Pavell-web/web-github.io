@@ -1,10 +1,15 @@
 let calcBtn = document.querySelector('.btn-calc');
 let calcWindow = document.querySelector('.calc-window');
 let countBtn = document.querySelector('.btn-count');
+let closeBtn = document.querySelector('.close-calc');
 
 calcBtn.onclick = function() {
     console.log('click');
-    calcWindow.classList.toggle('calc-window-hidden');
+    calcWindow.classList.remove('calc-window-hidden');
+}
+
+closeBtn.onclick = function() {
+    calcWindow.classList.add('calc-window-hidden');
 }
 
 
