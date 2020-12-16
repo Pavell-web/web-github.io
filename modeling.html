@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet/less" href="css/style.less">
+    <link rel="stylesheet/less" href="css/modeling.less">
 </head>
 
 <body>
@@ -15,9 +16,9 @@
     <header class="header">
         <div class="header-wrapper">
             <div class="main-title">
-                <img src="" alt="логотип">
+                <img src="logo/tempLogo.jpg" alt="логотип" class="mainLogo">
                 <h1 class=>Услуги 3D моделирования</h1>
-                <a href="mailto: risen82@list.ru">my-email@gmail.com</a>
+                <a href="mailto: risen82@list.ru" class="mail-link">my-email@gmail.com</a>
             </div>
             <nav class="nav-menu">
                 <ul class="nav-menu-list">
@@ -29,20 +30,105 @@
         </div>
     </header>
 
-    <section class="about">
-        <h2>Кому необходима предметная визуализация?​​​​​​​</h2>
+    <main class="modeling-main container-fluid">
+        <section class="about container">
+            <div class="row justify-content-center what-for">
+                <p>3d-визуализация - это не просто альтернатива фотографированию объекта, она дает гораздо больше возможностей для
+                демонстрации изделия. Однажды смоделированный объект в дальнейшем можно поместить в любое окружение, оперативно внести
+                изменение в его конструкцию или материалы и в кратчайшие сроки и с минимальными затратами получить итоговые изображения,
+                демонстрирующий предмет и его свойства в наиболее выгодном для этого ракурсе.</p>
 
+                <h2>Для чего нужна визуализация​​​​​​​</h2>
+
+                <div class="col-xl-5"> 
+                    <img src="img/pic1.jpg" alt="">
+                    <p> Иногда возникает необходимость представить определенный объект как самостоятельный предмет без какого-либо окружения.
+                    Моделирование предметов поможет, если нет возможности сделать фото или фоографирование экономически нецелесообразно.</p>
+                </div>
+
+                <div class="col-xl-5">
+                    <img src="img/pic2.jpg" alt="">
+                    <p> Для создаваемой модели возможно применение различных материалов и цветов, возможно создание ее модификации или замены в
+                    модели неудачных элементов, возможно нанесение фирменных логотипов. 3D модель масштабируема и позволяет показать ее
+                    конструктив с любой стороны.</p>
+                </div>
+
+                <div class="sketchfab-embed-wrapper col-md-8 col-xl-6">
+                    <iframe title="A 3D model" width="640" height="480"
+                        src="https://sketchfab.com/models/51cd134a04eb497093572f1dd856fce7/embed?autostart=0&amp;camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_theme=dark&amp;ui_watermark=1&amp;ui_watermark_link=1"
+                        frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true"
+                        webkitallowfullscreen="true"></iframe>
+                    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                        <a href="https://sketchfab.com/3d-models/alarm-clock-51cd134a04eb497093572f1dd856fce7?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
+                            target="_blank" style="font-weight: bold; color: #1CAAD9;">Alarm clock</a>
+                        by <a href="https://sketchfab.com/Stellar_cell?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
+                            target="_blank" style="font-weight: bold; color: #1CAAD9;">Stellar_cell</a>
+                        on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank"
+                            style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                    </p>
+                </div>
+
+                <div class="sketchfab-embed-wrapper col-md-8 col-xl-6">
+                    <iframe title="A 3D model" width="640" height="480"
+                        src="https://sketchfab.com/models/eb3294b4a08c4d62a6e520b302d187b1/embed?autostart=0&amp;camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_theme=dark&amp;ui_watermark=1&amp;ui_watermark_link=1"
+                        frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true"
+                        webkitallowfullscreen="true"></iframe>
+                    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                        <a href="https://sketchfab.com/3d-models/ak47-eb3294b4a08c4d62a6e520b302d187b1?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
+                            target="_blank" style="font-weight: bold; color: #1CAAD9;">AK47</a>
+                        by <a href="https://sketchfab.com/Stellar_cell?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
+                            target="_blank" style="font-weight: bold; color: #1CAAD9;">Stellar_cell</a>
+                        on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank"
+                            style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+            <h2>Кому необходима предметная визуализация?​​​​​​​</h2>
+            
+            <ul>
+                <li>Дизайнерам и разработчикам: для наглядной демонстрации дизайна и конструкции создаваемого предмета.</li>
+                <li>Интернет магазинам: наполнеие галереи сайта изображениями товаров.</li>
+                <li>Производителям мебели: продемонстрировать покупателям, как будет выглядеть мебель отдельно, в составе гарнитура или в
+                интерьере.</li>
+                <li>Рекламным компаниям: наглядное представление дизайна упаковки на трехмерной модели продукта.</li>
+                <li>Производителям: моделирование изделий для 3D принтера или ЧПУ.</li>
+            </ul>
+        <section>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <a href="mailto: risen82@list.ru" class="mail-link">my-email@gmail.com</a>
+        <div class="copyright">&copy; Павел Романов, 2020</div>
+    
+        <div class="links">
+            <div class="link-item">
+                <a href="https://sketchfab.com/Stellar_cell" target="_blank" class="sketchfab-link"><img
+                        src="logo/sketchfab.png" alt="sketchfab" class="sketchfab-logo">Sketchfab</a>
+            </div>
+    
+            <div class="link-item">
+                <a href="https://www.artstation.com/pavelromanov" target="_blank" class="artstation-link"><img
+                        src="logo/artstation.png" alt="artstation" class="artstation-logo">Artstation</a>
+            </div>
+        </div>
+    
+    </footer>
+
+        <script src="//cdn.jsdelivr.net/npm/less"></script>
         
-
-    </section>
-
-
-
-
-    <script src="//cdn.jsdelivr.net/npm/less"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        
+        
     </body>
     
     </html>
