@@ -10,25 +10,28 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="header-wrapper">
-            <div class="main-title">
-                <img src="logo/tempLogo.jpg" alt="логотип" class="mainLogo">
-                <h1 class=>Услуги 3D моделирования</h1> 
-                <a href="mailto: risen82@list.ru" class="mail-link">my-email@gmail.com</a>
+    <header class="header container">
+    
+        <div class="main-title">
+            <img src="logo/tempLogo.jpg" alt="логотип" class="mainLogo">
+            <div>
+                <h1 class=>Услуги 3D моделирования</h1>
             </div>
-            <nav  class="nav-menu">
-                <ul class="nav-menu-list">
-                    <li><a href="index.html">визуализация интерьера</a></li>
-                    <li><a href="#">3D тур</a></li>
-                    <li><a href="modeling.html">моделирование</a></li> 
-                </ul>
-            </nav> 
+            <div><a href="mailto: risen82@list.ru" class="mail-link">my-email@gmail.com</a></div>
         </div>
+        <nav class="nav-menu">
+            <ul class="nav-menu-list row">
+                <li class='col-md'><a href="index.html">визуализация интерьера</a></li>
+                <li class='col-md'><a href="#">3D тур</a></li>
+                <li class='col-md'><a href="modeling.html">моделирование</a></li>
+            </ul>
+        </nav>
+    
     </header>
 
-    <main>
-        <section class="intro">
+
+    <main class='container'>
+        <section class="row intro">
             <div class="interior-title">
                 <h2>Визуализация интерьера</h2>
             </div>
@@ -41,7 +44,7 @@
                 </P>
         </section>
 
-            <section class="gallery">
+            <section class="row gallery">
                     <h2>Галерея работ</h2>
             
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -79,7 +82,7 @@
 
         </section>
 
-        <section class="steps">
+        <section class="row steps">
                 <h2>Этапы выполнения работы</h2>
                     <p><span>Первое превью</span>
                         После получения ТЗ начинается первоый этап работы — построение геометрии, настройка освещения и подбор ракурсов. В
@@ -98,7 +101,7 @@
 
         </section>
 
-        <section class="price">
+        <section class="row price">
                 <h2>рассчитать предварительную стоимость визуализации</h2>
                 <div class="calc-window calc-window-hidden container-sm col-xs-8 col-md-6 col-xl-4 text-center">
                 <button class="btn-close close-calc"></button>
@@ -129,7 +132,7 @@
                 </div>
                 <button class="btn btn-success btn-calc">калькулятор стоимости</button>
             </section>
-
+    </main>       
            
         <footer class="container">
             <div class="row flex-wrap">
@@ -151,25 +154,9 @@
         
         </footer>
 
-
-        <!-- <footer>
-            <a href="mailto: risen82@list.ru" class="mail-link">my-email@gmail.com</a>
-            <div class="copyright">&copy; Павел Романов, 2020</div>
-
-            <div class="links">
-                <div class="link-item">
-                    <a href="https://sketchfab.com/Stellar_cell" target="_blank" class="sketchfab-link"><img src="logo/sketchfab.png" alt="sketchfab" class="sketchfab-logo">Sketchfab</a>
-                </div>
-
-                <div class="link-item">
-                <a href="https://www.artstation.com/pavelromanov" target="_blank" class="artstation-link"><img src="logo/artstation.png" alt="artstation" class="artstation-logo">Artstation</a>
-                </div>
-            </div>
-           
-        </footer> -->
     
     
-        <script src="//cdn.jsdelivr.net/npm/less"></script>
+<script src="//cdn.jsdelivr.net/npm/less"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

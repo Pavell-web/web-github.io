@@ -2,6 +2,8 @@
 
 body {
     background-color: lightgray;
+    padding: 0;
+    margin: 0;
 }
 
 h2 {
@@ -17,8 +19,6 @@ p {
 //Секция header
 
 header {
-    max-width: 1400px;
-    margin: auto;
  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
  background-blend-mode: multiply,multiply;
 }
@@ -36,6 +36,7 @@ header {
 
 .main-title {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px 5px black;
@@ -49,14 +50,15 @@ header {
 
 .nav-menu li {
     display: inline-block;
-    padding: 15px;
+    padding: 5px 15px;
 }
 
 .nav-menu li a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
     color: rgb(197, 150, 105);
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .nav-menu li a:hover {
@@ -66,19 +68,18 @@ header {
 
 //секция main
 
+
 .intro p {
     padding: 30px;
 }
 
-main {
-    max-width: 1400px;
-    margin: auto;
-}
 
 .interior-title {
     height: 50vh;
     background-image: url(../img/2.jpg);
 }
+
+
 
 //секция steps
 
@@ -105,7 +106,7 @@ main {
     font-size: 1.5rem;
 }
 
-//Секция расчета стоимости
+// //Секция расчета стоимости
 
 .price {
     position: relative;
@@ -135,7 +136,7 @@ main {
     justify-content: space-around;
     align-items: center;
     height: 400px;
-    background-color: rgba(103, 149, 209, 0.801);
+    background-color: rgb(121, 173, 241);
     border-radius: 15px;
     font-size: 1.3rem;
 }
@@ -160,14 +161,12 @@ right: 5px;
     width: 250px;
 }
 
+
+
 //футер
 
 footer {
-     padding: 15px;
-    // min-height: 200px;
-    // background-color: rgb(87, 147, 155);
-    // display: flex;
-    // justify-content: space-between;
+    padding: 15px;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
     
